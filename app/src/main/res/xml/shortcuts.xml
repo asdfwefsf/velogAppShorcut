@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="static"
+        android:enabled="true"
+        android:icon="@drawable/ic_launcher_background"
+        android:shortcutShortLabel="@string/short_label"
+        android:shortcutLongLabel="@string/long_label"
+        android:shortcutDisabledMessage="@string/disactive_static_app_shortcut">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.company.velogappshorcut"
+            android:targetClass="com.company.velogappshorcut.MainActivity" >
+            <extra
+                android:name="shortcut_id"
+                android:value="static"/>
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+        <capability-binding android:key="actions.intent.CREATE_MESSAGE" />
+    </shortcut>
+</shortcuts>
